@@ -9,8 +9,6 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'IOPut', link: '/ioPutDocs/io-basic' },
-      { text: '初识大语言模型',link:'/LLM/hello-llm'}
     ],
 
     sidebar: [
@@ -20,11 +18,24 @@ export default defineConfig({
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
-      }
+      },
+      {
+        text: 'Java',
+        items: [
+          {text: 'maven', link:'/Java/maven'},
+          {text: 'IOPut', link: '/Java/io-basic' },
+        ]
+      },
+      {
+        text: '语言大大大模型',
+        items: [
+          { text: '初识大语言模型',link:'/LLM/hello-llm'},
+        ]
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/ChenCC-Maker/cc-vitepress-docs' }
     ]
   }
 })
